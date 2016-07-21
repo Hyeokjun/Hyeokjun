@@ -12,7 +12,7 @@ public class cost_request extends Activity{
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub0);
+        setContentView(R.layout.activity_sin);
         CONTEXT= this;
 
     }
