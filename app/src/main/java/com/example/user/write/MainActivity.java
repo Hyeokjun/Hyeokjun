@@ -1,5 +1,6 @@
 package com.example.user.write;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,16 +10,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Context CONTEXT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        EditText mTitle = (EditText)findViewById(R.id.id);
+        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+        imm.showSoftInput(mTitle, 0);
+        CONTEXT= this;
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -30,9 +37,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void onClick(View view)
-    {
+        {
+        EditText txt_id = (EditText) findViewById(R.id.id);
+        EditText txt_pwd = (EditText) findViewById(R.id.pwd);
         Intent intent = new Intent(this,Cost.class);
-        startActivity(intent);
+        if(txt_id.equals(null)){
+            Toast.makeText(CONTEXT, "입력받은 id 가 없습니다.", Toast.LENGTH_SHORT).show();
+        }
+        else if(txt_pwd.equals(null)){
+            Toast.makeText(CONTEXT, "입력받은 pwd 가 없습니다.", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            startActivity(intent);
+        }
     }
 
     @Override

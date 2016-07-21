@@ -22,10 +22,10 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
             android:id="@+id/save"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,8 +62,7 @@
             android:id="@+id/cost"
             android:text="0"
             android:layout_below="@+id/textView8"
-            android:layout_alignStart="@+id/save"
-            android:layout_marginStart="30dp" />
+            android:layout_alignStart="@+id/save" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -125,6 +124,14 @@
             android:id="@+id/textView12"
             android:layout_below="@+id/name_g"
             android:layout_alignStart="@+id/name_g" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:datePickerMode="spinner"
+            android:layout_alignBottom="@+id/year"
+            android:layout_toEndOf="@+id/year" />
 
     </RelativeLayout>
 </LinearLayout>

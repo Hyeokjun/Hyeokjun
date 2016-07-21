@@ -23,34 +23,36 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:text="Username"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/id"
             android:layout_marginTop="26dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:maxLength="50" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberPassword"
+            android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/pwd"
             android:text="aaaa"
-            android:layout_below="@+id/editText"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/id"
+            android:layout_centerHorizontal="true"
+            android:maxLength="300" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_login"
             android:id="@+id/button"
-            android:layout_below="@+id/editText2"
-            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/pwd"
+            android:layout_alignStart="@+id/pwd"
             android:layout_marginTop="52dp"
             android:onClick = "onClick"
-            android:layout_alignEnd="@+id/editText2" />
+            android:layout_alignEnd="@+id/pwd" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,8 +61,8 @@
 
 PWD : "
             android:id="@+id/textView6"
-            android:layout_alignTop="@+id/editText"
-            android:layout_toStartOf="@+id/editText" />
+            android:layout_alignTop="@+id/id"
+            android:layout_toStartOf="@+id/id" />
 
     </RelativeLayout>
 
