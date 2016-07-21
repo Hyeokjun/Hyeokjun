@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClick(View view)
         {
+
         EditText txt_id = (EditText) findViewById(R.id.id);
         EditText txt_pwd = (EditText) findViewById(R.id.pwd);
         Intent intent = new Intent(this,Cost.class);
