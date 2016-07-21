@@ -23,9 +23,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/save"
+            android:onClick="onClick"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:onClick="onClick" />
+            android:text="save" />
 
         <TextView
             android:layout_width="wrap_content"
