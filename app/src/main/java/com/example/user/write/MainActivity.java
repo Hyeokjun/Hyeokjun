@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
         EditText txt_id = (EditText) findViewById(R.id.id);
         EditText txt_pwd = (EditText) findViewById(R.id.pwd);
-        Intent intent = new Intent(this,Cost.class);
-        if(txt_id.equals("")){
+
+        if(txt_id.getText().toString().equals("")){
             Toast.makeText(CONTEXT,"입력받은 id 가 없습니다.", Toast.LENGTH_SHORT).show();
         }
-        else if(txt_pwd.equals("")){
+        else if(txt_pwd.getText().toString().equals("")){
             Toast.makeText(CONTEXT, "입력받은 pwd 가 없습니다.", Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(CONTEXT, txt_id.getText(), Toast.LENGTH_SHORT).show();
+           Intent intent = new Intent(this,Cost.class);
             startActivity(intent);
         }
     }
