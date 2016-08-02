@@ -6,4 +6,9 @@
     <string name="text_Q">Q</string>
     <string name="text_W">W</string>
     <string name="text_A">A</string>
+    <string name="spinner_d0">dropdown</string>
+    <string name="spinner_d1">dropdown</string>
+    <string name="spinner_d2">dropdown</string>
+    <string name="spinner_d3">dropdown</string>
+    <string name="spinner_d4">dropdown</string>
 </resources>

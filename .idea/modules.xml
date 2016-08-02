@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hyeokjun.iml" filepath="$PROJECT_DIR$/Hyeokjun.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hyeokjun0-master.iml" filepath="$PROJECT_DIR$/Hyeokjun0-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Write.iml" filepath="$PROJECT_DIR$/Write.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

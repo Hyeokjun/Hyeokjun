@@ -6,18 +6,30 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
 public class cost_request extends AppCompatActivity{
     private Context CONTEXT;
+    private Spinner sSpinner = null;
+    private ArrayAdapter<String> sSpinnerAdapter = null;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sin);
         CONTEXT= this;
+
+        sSpinner = (Spinner) findViewById(R.id.spinner0);
+
+        sSpinnerAdapter=new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item,
+                (String[])getResources().getStringArray(R.array.data_sin));
+        sSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sSpinner.setAdapter(sSpinnerAdapter);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolBar);
         toolbar.setTitle(R.string.text_login);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_sin">
+        <item>@string/spinner_d0</item>
+        <item>@string/spinner_d1</item>
+        <item>@string/spinner_d2</item>
+        <item>@string/spinner_d3</item>
+        <item>@string/spinner_d4</item>
+        </string-array>
+</resources>

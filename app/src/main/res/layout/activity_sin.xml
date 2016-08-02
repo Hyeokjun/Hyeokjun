@@ -120,10 +120,11 @@
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/name_g"
+            android:id="@+id/spinner0"
             android:layout_below="@+id/textView11"
             android:layout_alignStart="@+id/textView11"
-            android:layout_alignEnd="@+id/cost" />
+            android:layout_alignEnd="@+id/cost"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:layout_width="wrap_content"
