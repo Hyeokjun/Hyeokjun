@@ -11,4 +11,7 @@
     <string name="spinner_d2">dropdown</string>
     <string name="spinner_d3">dropdown</string>
     <string name="spinner_d4">dropdown</string>
+    <!-- 공통패키지 텍스트 -->
+    <string name="common_text_confirm">확인</string>
+    <string name="common_text_error">오류</string>
 </resources>

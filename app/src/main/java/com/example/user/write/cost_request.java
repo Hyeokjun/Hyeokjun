@@ -1,16 +1,24 @@
 package com.example.user.write;
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
+import java.util.Calendar;
 
 public class cost_request extends AppCompatActivity{
     private Context CONTEXT;
@@ -25,9 +33,9 @@ public class cost_request extends AppCompatActivity{
 
         sSpinner = (Spinner) findViewById(R.id.spinner0);
 
-        sSpinnerAdapter=new ArrayAdapter<String>(this,
+        sSpinnerAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,
-                (String[])getResources().getStringArray(R.array.data_sin));
+                (String[]) getResources().getStringArray(R.array.data_sin));
         sSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sSpinner.setAdapter(sSpinnerAdapter);
 
@@ -39,7 +47,11 @@ public class cost_request extends AppCompatActivity{
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
-
+   /* public void showDatePickerDialog(View v) {
+        DialogFragment newFragment = new DialogFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+    */
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -70,4 +82,6 @@ public class cost_request extends AppCompatActivity{
 
         }
     }
+
 }
+

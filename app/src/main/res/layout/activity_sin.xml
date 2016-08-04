@@ -84,19 +84,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="2016-07-05"
-            android:id="@+id/year"
-            android:layout_below="@+id/textView9"
-            android:layout_alignLeft="@+id/textView8" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="적요(메모)"
             android:id="@+id/textView10"
-            android:layout_below="@+id/year"
-            android:layout_alignLeft="@+id/textView8" />
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/datepick" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -105,9 +96,8 @@
             android:text="메모"
             android:ems="10"
             android:id="@+id/editText5"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/textView12"
-            android:layout_alignStart="@+id/textView11" />
+            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -115,24 +105,33 @@
             android:text="계정"
             android:id="@+id/textView11"
             android:layout_below="@+id/editText5"
-            android:layout_alignStart="@+id/textView10" />
+            android:layout_alignStart="@+id/editText5" />
 
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner0"
+            android:spinnerMode="dropdown"
             android:layout_below="@+id/textView11"
-            android:layout_alignStart="@+id/textView11"
             android:layout_alignEnd="@+id/cost"
-            android:spinnerMode="dropdown" />
+            android:layout_alignStart="@+id/textView11" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="영수증"
             android:id="@+id/textView12"
-            android:layout_below="@+id/name_g"
-            android:layout_alignStart="@+id/name_g" />
+            android:layout_alignStart="@+id/spinner0"
+            android:layout_below="@+id/spinner0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-05"
+            android:id="@+id/datepick"
+            android:layout_below="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:onClick="showDatePickerDialog" />
 
     </RelativeLayout>
 </LinearLayout>
